@@ -1,0 +1,13 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Tanebaum 2010]{tanebaun2010}
+\abntrefinfo{Tanebaum}{TANEBAUM}{2010}
+{TANEBAUM, A.~S. \textbf{Sistemas Operacionais Modernos}. 3. ed. S\~{a}o Paulo:
+  Pearlson Prentice Hall, 2010. 638~p.}
+
+\end{thebibliography}
