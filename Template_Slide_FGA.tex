@@ -3,68 +3,17 @@
 %Repositório disponível em: https://github.com/Collumbus/Template_Slides_LaTex
 %Criado em 18 de julhor de 2018.
 
-\documentclass[aspectratio=169]{beamer}
-\usetheme{default} %tema do slide
-\usecolortheme{seagull}
-\usepackage[brazil]{babel} %texto
-\usepackage[utf8]{inputenc} %texto
-\usepackage{graphicx} %imagem	
-\usepackage{caption} %imagem
-\usepackage{subcaption} %imagem
-\usepackage{float} %imagem e tabelas
-\usepackage{booktabs} %tabelas	
-\usepackage[abnt-emphasize=bf,alf]{abntex2cite} %citacoes ABNT
-\graphicspath{{./Figuras/}} %Colarimages na pasta "Figuras". Gosto de fazer isso para organizar os arquivos.    		
-
-%Plano de fundo: Barra verde
-\setbeamertemplate{background canvas}{\includegraphics
-	[width=\paperwidth,height=\paperheight]{bkg.jpg}}
-	
-%Numeração de slides e footnotes
-%\useoutertheme{infolines} 
-\usepackage{beamer/themes/outer/beamerouterthemeumbcfootline}
-
-%Defini uma cor
-\definecolor{mygreen}{rgb}{.125,.5,.25}
-%\usecolortheme[named=mygreen]{structure}
-
-%Customiza marcadores
-\setbeamertemplate{itemize item}{\color{mygreen}$\blacksquare$}
-\setbeamertemplate{itemize subitem}{\color{mygreen}$\blacktriangleright$}
-
-\usepackage{textpos}
-
-%Logo da UnB
-\addtobeamertemplate{headline}{}{%
-\begin{textblock*}{100mm}(.030\textwidth,0.2cm)
-\includegraphics[width=1cm]{logo2}
-\end{textblock*}}
-
-%Logo do Mestrado
-\addtobeamertemplate{headline}{}{%
-\begin{textblock*}{100mm}(.110\textwidth,0.17cm)
-\includegraphics[width=1cm]{logo4}
-\end{textblock*}}
-
-%Logo da FGA
-\addtobeamertemplate{headline}{}{%
-\begin{textblock*}{100mm}(.915\textwidth,0.1cm)
-\includegraphics[width=1.0cm]{logo3} 
-\end{textblock*}}
-
-
+\input{setup/pacotes}
+\input{setup/parametrosDeLayout}
+\input{setup/novosComandos}
+\input{setup/informacoes}
 \begin{document}
-	%Título
-	\title[Título Curto]{Título longo}
-	%Funções desativadas neste template
-	\author[e-mail@e-mail.com]{}
-	\institute[UnB/FGA]{}
-	\date[]{}%Não mexer nesta função
 	
-	\setbeamertemplate{frametitle}[default][center]
-	
-	\begin{frame}
-	
+
+%---------------------------------------------------------------------------
+% SLIDE CAPA
+%---------------------------------------------------------------------------
+	\begin{frame}	
 		%Cabeçalho
 		\frametitle{\tiny  \textbf{Universidade de Brasília – UnB\\Faculdade UnB Gama – FGA\\ \vspace{0.8mm} Mestrado em Engenharia Biomédica\\ \qquad}}
 		\titlepage
@@ -73,9 +22,9 @@
 		\begin{textblock*}{100mm}(.35\textwidth,-2.5cm)
 			\begin{flushright}
 				\footnotesize
-				Autor: Nome do Autor\\
-				Orientadora: Nome do Orientador(a)\\
-				Coorientadora: Nome do Coorientador(a)
+				Autor: \imprimirAutor\\
+				Orientadora: \imprimirOrientador\\
+				Coorientadora: \imprimirCoorientador
 			\end{flushright}
 		\end{textblock*}
 
@@ -83,8 +32,8 @@
 		\begin{textblock*}{50mm}(.3\textwidth,-0.5cm)
 			\begin{center}
 				\footnotesize
-				Brasília, 09 de Agosto de 2018\\
-				UnB/FGA
+				\imprimirLocal, \imprimirData\\
+				\imprimirInstituicao
 			\end{center}
 		\end{textblock*}
 

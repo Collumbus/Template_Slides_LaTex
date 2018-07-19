@@ -1,0 +1,52 @@
+%Define local da pasta de figuras.  
+\graphicspath{{./figuras/}} 		
+
+%Numeração de slides e footnotes
+%Opção 1
+\usepackage{beamer/themes/outer/beamerouterthemeumbcfootline}
+%Opção 2
+%\useoutertheme{infolines}
+
+%Insere um plano de fundo: Barra verde
+\setbeamertemplate{background canvas}{\includegraphics
+	[width=\paperwidth,height=\paperheight]{bkg.jpg}}
+
+%Insere as Logos
+
+%Logo superior esquerda 1
+\addtobeamertemplate{headline}{}{%
+	\begin{textblock*}{100mm}(.030\textwidth,0.2cm)
+		\includegraphics[width=1cm]{logo2} 
+\end{textblock*}}
+
+%Logo superior esquerda 2
+\addtobeamertemplate{headline}{}{%
+	\begin{textblock*}{100mm}(.915\textwidth,0.1cm)
+		\includegraphics[width=1.0cm]{logo3} 
+\end{textblock*}}
+
+%Logo superior direita 1
+\addtobeamertemplate{headline}{}{%
+	\begin{textblock*}{100mm}(.110\textwidth,0.17cm)
+		\includegraphics[width=1cm]{logo4}
+\end{textblock*}}
+
+
+%Defini uma cor personalizada
+\definecolor{mygreen}{rgb}{.125,.5,.25}
+%\usecolortheme[named=mygreen]{structure}
+
+%Customiza marcadores
+%\setbeamertemplate{items}[ball]
+\setbeamertemplate{itemize item}{\color{mygreen}$\blacksquare$}
+\setbeamertemplate{itemize subitem}{\color{mygreen}$\blacktriangleright$}
+
+%Centraliza o título dos slides
+\setbeamertemplate{frametitle}[default][center]
+
+
+%Reservados para o sistema - Não alterar
+\title[\imprimirTitulo]{\imprimirTitulo}
+\author[\imprimirEmail]{}
+\date[]{}
+\institute[\imprimirInstituicao]{}

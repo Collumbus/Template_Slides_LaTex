@@ -1,5 +1,4 @@
-\beamer@endinputifotherversion {3.36pt}
-\select@language {brazil}
+\babel@toc {brazil}{}
 \beamer@sectionintoc {1}{Imagem}{3}{0}{1}
 \beamer@sectionintoc {2}{Tabelas}{7}{0}{2}
 \beamer@sectionintoc {3}{Listas}{8}{0}{3}
