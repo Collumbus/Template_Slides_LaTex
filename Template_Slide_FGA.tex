@@ -20,10 +20,17 @@
 \setbeamertemplate{background canvas}{\includegraphics
 	[width=\paperwidth,height=\paperheight]{bkg.jpg}}
 	
-%Caso queira mudar a paleta de cores editar os parâmetros abaixo	
-%\definecolor{mygreen}{rgb}{.125,.5,.25}
+%Numeração de slides e footnotes
+%\useoutertheme{infolines} 
+\usepackage{beamer/themes/outer/beamerouterthemeumbcfootline}
+
+%Defini uma cor
+\definecolor{mygreen}{rgb}{.125,.5,.25}
 %\usecolortheme[named=mygreen]{structure}
 
+%Customiza marcadores
+\setbeamertemplate{itemize item}{\color{mygreen}$\blacksquare$}
+\setbeamertemplate{itemize subitem}{\color{mygreen}$\blacktriangleright$}
 
 \usepackage{textpos}
 
@@ -50,8 +57,8 @@
 	%Título
 	\title[Título Curto]{Título longo}
 	%Funções desativadas neste template
-	%\author[jorgeluizjk@gmail.com]{Jorge Luiz Ferreira da Silva Junior}
-	%\institute[]{UnB}
+	\author[e-mail@e-mail.com]{}
+	\institute[UnB/FGA]{}
 	\date[]{}%Não mexer nesta função
 	
 	\setbeamertemplate{frametitle}[default][center]
